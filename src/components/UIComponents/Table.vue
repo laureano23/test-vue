@@ -8,9 +8,9 @@
     <tbody>
     <tr v-for="item in data">
       <slot :row="item">
-        <td v-for="column in columns" v-if="hasValue(item, column)">{{itemValue(item, column)}}</td>
-        <button class="btn btn-success">Editar</button>
-        <button class="btn btn-danger">Eliminar</button>
+        <td v-for="column in columns" v-if="isShow(item)">{{itemValue(item, column)}}</td>
+        <button class="btn btn-success" v-if="isShow(item)">Editar</button>
+        <button class="btn btn-danger" v-if="isShow(item)">Eliminar</button>
       </slot>
     </tr>
     </tbody>
@@ -24,6 +24,14 @@
       data: Array
     },
     methods: {
+      isShow(item){
+        console.log(item)
+        if(!item.hasOwnProperty('show') || item.show===true){
+          return true
+        }else{
+          return false
+        }
+      },
       hasValue (item, column) {
         return item[column.toLowerCase()] !== 'undefined'
       },

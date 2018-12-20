@@ -14,12 +14,13 @@ export default new Vuex.Store(
                 state.articulos = articulos
             },
             buscarArticulos (state, key) {
-                console.log(key.srcElement.value)
-                state.articulos.filter(function(item){
-                    console.log(item)
-                    item.descripcion.includes(key.srcElement.value)
-                })
-               
+                for(var i = 0; i < state.articulos.length; i++) {
+                    if (state.articulos[i].descripcion.toLowerCase().includes(key.srcElement.value)){
+                        Vue.set(state.articulos[i],'show',true);
+                    }else{
+                        Vue.set(state.articulos[i],'show',false);
+                    }
+                  }
             }
         },
         actions: {

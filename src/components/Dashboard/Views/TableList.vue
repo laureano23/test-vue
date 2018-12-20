@@ -16,7 +16,7 @@
               </l-table>
             </div>
           </card>
-        </div>s
+        </div>
       </div>
     </div>
   </div>
