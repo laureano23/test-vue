@@ -10,7 +10,7 @@
         <i class="nc-icon nc-circle-09"></i>
         <p>User Profile</p>
       </sidebar-link>
-      <sidebar-link to="/admin/table-list">
+      <sidebar-link to="/admin/art-form">
         <i class="nc-icon nc-notes"></i>
         <p>Articulos</p>
       </sidebar-link>
@@ -22,9 +22,9 @@
         <i class="nc-icon nc-atom"></i>
         <p>Icons</p>
       </sidebar-link>
-      <sidebar-link to="/admin/maps">
+      <sidebar-link to="/admin/grid">
         <i class="nc-icon nc-pin-3"></i>
-        <p>Maps</p>
+        <p>Grid Test</p>
       </sidebar-link>
       <sidebar-link to="/admin/notifications">
         <i class="nc-icon nc-bell-55"></i>

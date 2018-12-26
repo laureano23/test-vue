@@ -25,7 +25,6 @@
     },
     methods: {
       isShow(item){
-        console.log(item)
         if(!item.hasOwnProperty('show') || item.show===true){
           return true
         }else{

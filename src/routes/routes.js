@@ -8,8 +8,9 @@ import UserProfile from 'src/components/Dashboard/Views/UserProfile.vue'
 import TableList from 'src/components/Dashboard/Views/TableList.vue'
 import Typography from 'src/components/Dashboard/Views/Typography.vue'
 import Icons from 'src/components/Dashboard/Views/Icons.vue'
-import Maps from 'src/components/Dashboard/Views/Maps.vue'
 import Notifications from 'src/components/Dashboard/Views/Notifications.vue'
+import FormArt from 'src/components/Dashboard/FormArt.vue'
+import GridTest from 'src/components/UIComponents/GridTest.vue'
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
         component: TableList
       },
       {
+        path: 'art-form',
+        name: 'Articulos Form',
+        component: FormArt
+      },
+      {
         path: 'typography',
         name: 'Typography',
         component: Typography
@@ -48,9 +54,9 @@ const routes = [
         component: Icons
       },
       {
-        path: 'maps',
-        name: 'Maps',
-        component: Maps
+        path: 'grid',
+        name: 'GridTest',
+        component: GridTest
       },
       {
         path: 'notifications',

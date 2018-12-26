@@ -1,7 +1,10 @@
 import Vue from 'vue'
+import './plugins/vuetify'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import store from './store'
+import Vuetify from 'vuetify'
+//import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 
 // LightBootstrap plugin
 import LightBootstrap from './light-bootstrap-main'
@@ -11,6 +14,7 @@ import routes from './routes/routes'
 // plugin setup
 Vue.use(VueRouter)
 Vue.use(LightBootstrap)
+//Vue.use(Vuetify)
 
 // configure router
 const router = new VueRouter({
